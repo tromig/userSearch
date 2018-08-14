@@ -5,6 +5,7 @@ li.userItem {
     padding: 8px;
     margin-top: -1px;
     cursor: pointer;
+    transition: all .4s
 }
 
 .userItem:hover {
