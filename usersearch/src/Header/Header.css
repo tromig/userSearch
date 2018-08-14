@@ -11,3 +11,16 @@
 	font-size: 1.3em;
 	font-weight: normal;
 }
+
+h1{ 
+	display: inline-block;
+	vertical-align: middle;
+ }
+
+.header img {
+    width: 23px;
+    border: 2px solid white;
+    border-radius: 33px;
+    margin-right: 12px;
+    vertical-align: middle;
+}

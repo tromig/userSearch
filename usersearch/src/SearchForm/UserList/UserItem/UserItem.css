@@ -45,3 +45,8 @@ li.userItem {
     font-weight: 500;
     text-transform: capitalize;
 }
+
+.item-loc {
+    font-size: 13px;
+    color: #777;
+}

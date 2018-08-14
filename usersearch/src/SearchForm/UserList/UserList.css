@@ -8,4 +8,8 @@
 .userList ul {
     list-style: none;
     padding: 0;
+    height: 523px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    border-right: none;
 }
