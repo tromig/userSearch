@@ -1,0 +1,11 @@
+/*   UserList   */
+
+.userList {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.userList ul {
+    list-style: none;
+    padding: 0;
+}

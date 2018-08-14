@@ -1,0 +1,7 @@
+/* User Item */
+
+li.userItem {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-top: -1px;
+}

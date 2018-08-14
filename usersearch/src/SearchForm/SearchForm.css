@@ -1,0 +1,11 @@
+/* Search Form */
+
+.searchForm {
+	width: 80%;
+    margin: 8px auto 8px;
+    padding-top: 30px;
+    background-color: #f5fffa;
+    border: 1px solid #6d83ec;
+    border-radius: 8px;
+    overflow: hidden;
+}
