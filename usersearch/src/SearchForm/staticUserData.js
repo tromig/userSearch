@@ -1,8 +1,7 @@
 // 20180814121659
 // https://randomuser.me/api/?results=5
 
-const staticUserData = {
-  "results": [
+const staticUserData = [
     {
       "gender": "female",
       "name": {
@@ -263,13 +262,6 @@ const staticUserData = {
       },
       "nat": "NO"
     }
-  ],
-  "info": {
-    "seed": "5defcd6b14a3a022",
-    "results": 5,
-    "page": 1,
-    "version": "1.2"
-  }
-};
+  ];
 
 export default staticUserData;

@@ -4,4 +4,43 @@ li.userItem {
     border: 1px solid #ddd;
     padding: 8px;
     margin-top: -1px;
+    cursor: pointer;
+}
+
+.userItem:hover {
+    background-color: #cfffcf;
+}
+
+.item-content {
+    display: inline-flex;
+    flex-direction: row;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+.item-name, 
+.item-loc {
+    width: 80%;
+}
+
+.item-age, 
+.item-dob {
+    text-align: right;
+    width: 20%;
+    font-size: 14px;
+    color: #777;
+}
+
+.userItem img {
+    border-radius: 30px;
+    box-shadow: 0px 1px 1px #333;
+    border: 1px solid orange;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.item-name {
+    font-weight: 500;
+    text-transform: capitalize;
 }

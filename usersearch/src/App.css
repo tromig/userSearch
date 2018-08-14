@@ -1,5 +1,6 @@
 body {
 	background-color: #ffe892;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .App {
@@ -16,6 +17,7 @@ body {
 	animation: App-logo-spin infinite 20s linear;
 	height: 80px;
 }
+
 
 
 
