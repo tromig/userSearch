@@ -10,7 +10,10 @@ class SearchForm extends Component{
 		this.state = {
 			userData: [],
 			showData: [],
+			searchVal: '',
 		};
+
+		this.handleSearchChange = this.handleSearchChange.bind(this);
 	}
 
 	componentDidMount(){
@@ -26,10 +29,22 @@ class SearchForm extends Component{
 		});
 	}	
 
+	handleSearchChange(event){
+		this.setState( { searchVal: event.target.value }, this.processSearch(event.target.value) );
+		
+	}
+
+	processSearch(searchVal){
+		const workArray = this.state.userData.filter((user) => user.name.first.toLowerCase().indexOf(searchVal.toLowerCase()) > -1);
+		this.setState({
+			showData: workArray
+		});
+	}
+
 	render(){
 		return (
 			<div className='searchForm'>			    
-			    <SearchInput />
+			    <SearchInput searchVal={this.state.searchVal} onChange={this.handleSearchChange}/>
 			    <UserList userData={this.state.showData} />
 			</div>
 		);
