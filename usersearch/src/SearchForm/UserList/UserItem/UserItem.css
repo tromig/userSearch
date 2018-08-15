@@ -2,6 +2,7 @@
 
 li.userItem {
     border: 1px solid #ddd;
+    background-color: white;
     padding: 8px;
     margin-top: -1px;
     cursor: pointer;

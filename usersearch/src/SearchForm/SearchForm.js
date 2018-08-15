@@ -35,7 +35,10 @@ class SearchForm extends Component{
 	}
 
 	processSearch(searchVal){
-		const workArray = this.state.userData.filter((user) => user.name.first.toLowerCase().indexOf(searchVal.toLowerCase()) > -1);
+		const workArray = this.state.userData.filter((user) => user.name.first.toLowerCase().indexOf(searchVal.toLowerCase()) > -1 ||
+															   user.name.last.toLowerCase().indexOf(searchVal.toLowerCase()) > -1  ||
+															   String(user.dob.age).indexOf(searchVal.trim()) > -1
+		);						
 		this.setState({
 			showData: workArray
 		});
