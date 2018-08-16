@@ -21,21 +21,25 @@ class UserList extends Component {
 	}
 
 	render(){
-		const animProps = { duration: 400,
+		const animProps = { 
+							duration: 400,
 							easing: 'ease-in-out',
 							staggerDurationBy: 0,
 							staggerDelayBy: 0,
 							leaveAnimation: "fade",
 							enterAnimation: "fade"	
 						  };
-		const userItems = this.props.userData.map((user) => (
+
+		const userItems = this.props.userData.map((user, index) => (
 															<UserItem thumb={user.picture.thumbnail} 
 																	  name={this.formatName(user)}	
 																	  age={user.dob.age}
 																	  dob={this.formatDate(user.dob.date)}
 																	  loc={this.formatLoc(user)}
 																	  key={user.login.uuid}
-															/>));	
+																	  userIndex = {index}
+																	  onClick = {this.props.itemClickHandler}
+															/>), this);	
 		return (
 			<div className='userList'>
 				<ul>

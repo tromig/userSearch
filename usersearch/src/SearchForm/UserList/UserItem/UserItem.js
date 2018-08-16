@@ -5,7 +5,7 @@ class UserItem extends Component {
 
 	render(){
 		return (			
-			<li className="userItem">
+			<li className="userItem" onClick={this.props.onClick} userindex={this.props.userIndex}>
 				<img src={this.props.thumb} alt='user thumb'/>
 				<div className='item-content'>
 					<div className='item-name'>{this.props.name}</div>
